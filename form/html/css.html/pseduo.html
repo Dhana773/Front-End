@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+  .styled-button {
+           background-color: blue;
+           padding: 15px;
+           font-size: 16px;
+           border-radius: 20px;
+           text-decoration: none;
+      }
+  hover state 
+  .styled-button:hover{
+    background-color: red;
+  }
+  <-- focus state -->
+  .styled-button:focus {
+    background-color:green;
+  }
+  <-- active state (when clicking the button)-->
+  .styled-button:active {
+    background-color:blue;
+  }
+
+</style>
+</head>
+<body>
+    <button class="styled-button">Google.com</button>
+</body>
+</html> 
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       li{
+        font-size:16px;
+        color:black;
+       }
+
+    </style>
+</head>
+<body>
+    <ul>
+       <li>item1</li>
+       <li>item2</li>
+       <li>item3</li>
+       <li>item4</li>
+       <li>item5</li>
+       <li>item6</li>
+    </ul>
+</body>
+</html> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div::before{
+            content:"#"
+        }
+        div::after{
+            content: "lakshmi";
+        }
+        div::first-letter{
+            content:green;
+        }
+        ::selection{
+            content:red;
+        }
+    </style>
+</head>
+<body>
+    <div>Dhana></div>
+</body>
+</html>

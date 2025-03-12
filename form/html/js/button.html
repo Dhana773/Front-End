@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Remove event listener Example</title>
+
+</head>
+<body>
+    <button id=" myButton">click me</button>
+    <script>
+        var button = document.getElementById("myButton");
+        function handleButtonClick() {
+            buttton.style.backgroundColor = "blue";
+            console.log("Button Clicked");
+        }
+        button.addEventListener("click",handleButtonClick);
+        setTimeout(function() {
+            button.removeEventListener("click",handleButtonClick);
+            alert("Event listener removal");
+         }, 5000);
+        
+    </script>
+    
+</body>
+</html>
+<!-- call apply bind -->
+
+<!-- var emp1 = { firstname: "Dhana", lastname: "Dharani" };
+var emp2 = { firstname: "Dhanu", lastname: "madhuri" };
+function invite(greeting1,greeting2) {
+    console.log(
+      greeting1 + " " +this.firstname + " " +this.lastname + " , " + greeting2
+ );
+}
+
+ invite.call(emp1, "hello", "hii");
+ invite.call(emp2, "hello", "hii");
+
+ invite.apply(emp1, ["hello","hii"]);
+ invite.apply(emp2, ["hello","hii"]); -->
+
+
+
+ 

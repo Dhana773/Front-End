@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BURGER KING</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+        header {
+        top: 0;
+        position: sticky;
+        background-color: antiquewhite;
+        z-index: 1;
+
+        }
+        nav {
+        display: flex;
+        height: 100px;
+        padding: 0px 75px;
+        justify-content: space-between;
+        }
+
+        .burgerlogo {
+        display: flex;
+        align-items: center;
+        width: 20%;
+        justify-content: space-between;
+
+        }
+        .burgerlogo>img {
+        height: 50%;
+        }
+        .StartyourBKorder {
+            font-weight: bold;
+            font-size: 2rem;
+            text-align: left;
+            margin-top: 15px;
+            
+        }
+
+        .orderpicup, .orderdelivery {
+            background-color: #f39c12;
+            padding: 15px;
+            color: rgb(3, 3, 3);
+            border: none;
+            font-size: 1.2rem;
+            border-radius: 15px;
+            cursor: pointer;
+            width: 250px;
+            margin-top: 10px;
+        }
+
+        .orderpicup:hover {
+            background-color: #ee1010;
+        }
+        .orderdelivery:hover {
+            background-color: #ee1010;
+        }
+        /* Flexbox for Content Alignment */
+        .content {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 50%;
+            padding: 20px;
+        }
+        nav>.burgerlogo>h3:hover {
+        cursor: pointer;
+        }
+        
+
+        .logo{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 15%; 
+        }
+        .logo>img {
+            height: 50%;
+        }
+
+        nav>.logo>h3:hover {
+        cursor: pointer;
+        }
+        .start{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            color:white;
+            font-size: 25px;
+        }
+        .wrapper {
+        text-align: center;
+        }
+
+        .button {
+        position: absolute;
+        top: 24%;
+        color:white;
+        background-color: crimson;
+        border-radius: 20px;
+        border-color: black;
+        font-size: 20px;
+        }
+        .browser{
+            display: flex;
+            height: 150px;
+            align-items: center;
+            justify-content: space-around;
+            padding: 150px 100px 80px 300px;
+        }
+    
+        #box{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 5px 100px 100px 300px;
+        }
+        .card {
+            box-shadow: rgba(157, 10, 10, 0.558) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+        }
+        .card:hover {
+            cursor: pointer;
+            box-shadow: rgba(1, 1, 1, 10) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 0px 0px;
+        }
+        .card>img {
+            width: 100%;
+            margin: 0px;
+        }
+
+        .card>h2 {
+            text-align: center;
+            height: 2em;
+            margin-top: 10px;
+            color:hsl(0, 72%, 31%);
+        }
+        .png{
+            display:flex;
+            flex-direction:row;
+            justify-content: space-evenly;
+            align-items: flex-start;
+        }
+        #offer {
+            width: 80%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+           gap: 20px;
+        }
+        .offerCard {
+            background-color: white;
+            color: black;
+            height: 100%;
+            margin-bottom: 10%;
+        }
+        .offerCard>h1 {
+            color:hsl(0, 72%, 31%);
+        }
+
+        .offerCard>img {
+            width: 100%;
+        }
+
+        .offerCard>p {
+            margin: 0px 10px;
+        }
+        .offerCard>button {
+            margin: 10% 10% 10% 50%;
+            background-color:black;
+            border-radius: 20px;
+            color:white;
+            font-size: 20px;
+        }
+        footer{
+            width: 100%;
+            background-color: #202124;
+            padding: 100px 100px 10px 100px;
+        }
+        
+        #dfooter {
+            display: flex;
+            width: 20%;
+            justify-content: flex-start;
+            padding: 20px 50px;
+        }
+
+        #dfooter>img {
+            width: 200px;
+            height: 150px;
+        }
+        #footer{
+            dispaly:flex;
+        }
+        #container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            width: 60%;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .row>a {
+            text-decoration: none;
+            color: #E3E3E3;
+            font-weight: 100;
+            margin: 5px;
+        }
+
+        .row>a:hover {
+            font-weight: 600;
+        }
+        #app {
+        display: flex;
+        width: 20%;
+        justify-content: space-around;
+        }
+
+        #app>img {
+            width: 100px;
+            height: 50px;
+        }
+        .cpy{
+            height: 50px;
+            color:white;
+            font-size: 12px;
+            margin-top: 90px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+             <div class="page-container">
+                <div class="header"></div>
+                 <h1 class="burgerking">BURGER KING</h1>       
+                </div>
+            
+        <div class="burgerlogo">
+            <img src="https://logos-world.net/wp-content/uploads/2020/04/Burger-King-Logo-1969-1994.png" alt="">
+            <h3 href="menu.html">Menu</h3>
+            <h3 href="offers.html">offers</h3>
+            
+         </div>
+         <div class="logo">
+            <h3 href="signin">Viewcart</h3>
+            <img src="https://tse3.mm.bing.net/th?id=OIP.cYmZdQ3asz3r0-yrqWOYXgHaFB&pid=Api&P=0&h=220" alt="">
+         </div>
+        </nav>   
+        
+    </header>
+    <div class="content">
+        <!-- Left content (Order Buttons) -->
+        <div class="order">
+            <h1 class="StartyourBKorder">Start your BK® order.</h1>
+            <button class="orderpicup">Order Pickup</button><br><br>
+            <button class="orderdelivery">Order Delivery</button><br><br>
+        </div>
+        </div>
+    
+    <div id="box">
+        <div class="card">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.PqfDRnw84b9JQGvoEwRFegHaF7&pid=Api&P=0&h=220"
+                alt="">
+            <h2>CASTLE GATE MENU</h2>
+        </div>
+        <div class="card">
+            <img src="https://tse3.mm.bing.net/th?id=OIP.Xt1OLvD65uMPRexCt8ECNwHaEL&pid=Api&P=0&h=220"
+                alt="">
+            <h2>DOUBLE-QUATER POUND</h2>
+        </div>
+        <div class="card">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.r36_w0CibquRnLJhGyX33AHaFj&pid=Api&P=0&h=220"
+                alt="">
+            <h2>SPIDERMAN BURGER MEAL</h2>
+        </div>
+        <div class="card">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.d_R27gEHzB59sOXHG3v3qgHaD4&pid=Api&P=0&h=220"
+                alt="">
+            <h2>LONG BUTTERY CHEESE BURGER</h2>
+        </div>
+        <div class="card">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.73obi-Z32pXtQxfSrSX3IwHaD4&pid=Api&P=0&h=220"
+                alt="">
+            <h2>VEGAN COMBO</h2>
+        </div>
+        <div class="card">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.AmOE_pL4EIUQL4lr6udy5AHaHa&pid=Api&P=0&h=220"
+                alt="">
+            <h2>SPECIAL COMBO</h2>
+        </div>
+        <div class="card">
+            <img src="https://tse1.mm.bing.net/th?id=OIP.TTKvwSD1pLCaPGY-aaneHQHaEK&pid=Api&P=0&h=220"
+                alt="">
+            <h2>FISH BURGER</h2>
+        </div>
+        <div class="card">
+            <img src="https://tse2.mm.bing.net/th?id=OIP.B4NipCzz9pVK3Kd4CkhTZgAAAA&pid=Api&P=0&h=220"
+                alt="">
+            <h2>ABRY FISH SANDWICH</h2>
+        </div>
+    </div>
+   
+    <h1>SPECIAL OFFERS</h1>
+    
+        <div id="offer">
+            <div class="offerCard">
+                <img src="https://cdn.sanity.io/images/czqk28jt/prod_bk_us/2b60390402530831a1e97c98d699337a5eefad6c-2000x1000.png?w=812&q=75&fit=max&auto=format"
+                    alt="">
+                <h1>The tastiest deal of the week</h1>
+                <p>Today only! Get a great deal on the full-on flame-grilled flavor of a Whopper®. Order it your way in the BK® App.</p>
+                <button>ORDER NOW</button>
+            </div>
+            <div class="offerCard">
+                <img src="https://cdn.sanity.io/images/czqk28jt/prod_bk_us/981926aa6d4e1f8085cf8b76dea2978ca6bbdcfb-2000x1000.png?w=812&q=75&fit=max&auto=format"
+                    alt="">
+                <h1>Your favorites, your way. For $5 or $7!</h1>
+                <p>Save big with the $5 Duo or $7 Trio! Mix and match your faves—want 3 Bacon Cheeseburgers? You got it. Craving 2 Original Chicken Sandwiches? Go for it. It’s your choice—so Have It Your Way</p>
+                <button>ORDER NOW</button>
+            </div>
+            <div class="offerCard">
+                <img src="https://cdn.sanity.io/images/czqk28jt/prod_bk_us/8310d23232931d36f5ef1c492911d70b701b0bb6-2000x1000.png?w=812&q=75&fit=max&auto=format"
+                    alt="">
+                <h1>Don't miss this swag drop!</h1>
+                <p>The Whopper® Wearhouse is here with cozy winter merch from seasons past. Once these items disappear, they’ll be gone forever—so grab your favorites today!</p>
+                <button>ORDER NOW</button>
+            </div>
+            <div class="offerCard">
+                <img src="https://cdn.sanity.io/images/czqk28jt/prod_bk_us/4509f92e460ee2574c7f0934aeaa336c20c542b1-2000x1000.png?w=812&q=75&fit=max&auto=format"
+                    alt="">
+                <h1>Whopper® made your way</h1>
+                <p>There are over 200,000 ways to have a Whopper® your way. And each one rules, just like you.</p>
+                <button>ORDER NOW</button>
+            </div>
+        </div>
+    
+        <footer>
+
+            <div id="footer">
+                <div id="dfooter">
+                    <img src="https://cdn.sanity.io/images/czqk28jt/prod_bk_us/da421b826216c29608a2694126a5095f17be8676-630x622.png?w=1125&q=75&fit=max&auto=format" alt="">
+                </div>
+                <div id="container">
+                    <div class="row">
+                        <a href="">ABOUT burger king</a>
+                        <a href="">Careers</a>
+                        <a href="">Our golden past</a>
+                        <a href="">Responsible Disclosure</a>
+                    </div>
+                    <div class="row">
+                        <a href="">LEGAL</a>
+                        <a href="">terms and Conditions</a>
+                        <a href="">Privacy Policy</a>
+                        <a href="">Disclaimer</a>
+                        <a href="">Caution Notice</a>   
+                    </div>
+                    <div class="row">
+                        <a href="">SUPPORTS</a>
+                        <a href="">Get Help</a>
+                        <a href="">Contact Us</a>
+                        <a href=""> Feedback</a>
+                        <a href="">Privacy Policy</a> 
+                    </div>
+                </div>
+            </div>
+            <div class="cpy">
+                <p>&copy; TM & Copyright 2025 Burger King Company LLC. All Rights Reserved.
+                    |  Do Not Sell Or Share My Personal Information</p>
+            </div>
+        </footer>
+    </body>
+    </html>
